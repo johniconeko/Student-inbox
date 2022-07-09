@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['USER_ID'])){
+  header("Location: login.php?signin=true");
+}
+
+?>
+
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
